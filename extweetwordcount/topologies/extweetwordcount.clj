@@ -15,7 +15,7 @@
     ;; bolt configuration
     {"parse-tweet-bolt" (python-bolt-spec
           options
-          {"tweet-spout" :shuffle}
+          {"tweet-spout" :all}
           "bolts.parse.ParseTweet"
           ["valid_words"]
           :p 3

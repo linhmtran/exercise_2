@@ -36,7 +36,7 @@ class WordCounter(Bolt):
         # Old code from printing to screen:
 
         # Increment the local count
-        # self.counts[word] += 1
+        self.counts[word] += 1
         self.emit([word, self.counts[word]])
 
         # Log the count - just to see the topology running
